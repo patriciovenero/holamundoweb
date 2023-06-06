@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+    <title>hola mundo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <p th:text="'Mensaje recibido ->' + ${mensaje} + '!'" />
+
+        <h2>Lista de páginas</h2>
+        <div class="list-group">
+            <a href="/index.html" class="list-group-item list-group-item-action">
+                <button type="button" class="btn btn-primary">Página Index</button>
+            </a>
+            <a href="/operaciones?num1=12&num2=4&ope=*" class="list-group-item list-group-item-action">
+                <button type="button" class="btn btn-primary">Página operaciones</button>
+            </a>
+            <a href="/" class="list-group-item list-group-item-action">
+                <button type="button" class="btn btn-primary">Página Principal</button>
+            </a>
+        </div>
+
+</body>
+
+</html>
+

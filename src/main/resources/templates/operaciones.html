@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+    <title>hola mundo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Operaciones</th>
+                <th scope="col">Numero 1</th>
+                <th scope="col">Numero 2</th>
+                <th scope="col">Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th th:text="${ope}" scope="row"></th>
+                <td th:text="${num1}"></td>
+                <td th:text="${num2}"></td>
+                <td th:text="${rpta}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Lista de páginas</h2>
+    <div class="card-body">
+        <a href="/index.html" class="list-group-item list-group-item-action">
+            <button type="button" class="btn btn-primary">Página Index</button>
+        </a>
+        <a href="/saludo" class="list-group-item list-group-item-action">
+            <button type="button" class="btn btn-primary">Página Saludo</button>
+        </a>
+        <a href="/" class="list-group-item list-group-item-action">
+            <button type="button" class="btn btn-primary">Página Principal</button>
+        </a>
+    </div>
+</body>
+
+</html>
